@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<dirinfo>
+<files>
+<item key='.sass-cache20160727204021' />
+<item key='.tmp20160727204940' />
+<item key='app20160727190944' />
+<item key='bower_components20160727203714' />
+<item key='Assets20160727234928' />
+<item key='node_modules20160727203654' />
+<item key='test20160727190944' />
+<item key='.bowerrc20160727190944' />
+<item key='.editorconfig20160727190944' />
+<item key='.gitattributes20160727190944' />
+<item key='.gitignore20160727190944' />
+<item key='.jscsrc20160727190944' />
+<item key='.jshintrc20160727190944' />
+<item key='.yo-rc.json20160727190944' />
+<item key='bower.json20160727190944' />
+<item key='Gruntfile.js20160727190944' />
+<item key='package.json20160727203951' />
+<item key='README.md20160727190944' />
+</files>
+</dirinfo>

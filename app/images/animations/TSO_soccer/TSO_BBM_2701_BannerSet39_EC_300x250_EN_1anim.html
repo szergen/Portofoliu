@@ -1,0 +1,59 @@
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TSO_BBM_2701_BannerSet39_EC_300x250_EN_1anim</title>
+<!-- write your code here -->
+<meta name="ad.size" content="width=300,height=250">
+
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2015.11.26_54e1c3722102182bb133912ad4442e19_min.js"></script>
+<script src="TSO_BBM_2701_BannerSet39_EC_300x250_EN_1anim.js"></script>
+<script>
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+	
+	canvas = document.getElementById("canvas");
+	images = images||{};
+	ss = ss||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadFile({src:"images/TSO_BBM_2701_BannerSet39_EC_300x250_EN_1anim_atlas_.png", type:"image", id:"TSO_BBM_2701_BannerSet39_EC_300x250_EN_1anim_atlas_"}, true);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	var queue = evt.target;
+	ss["TSO_BBM_2701_BannerSet39_EC_300x250_EN_1anim_atlas_"] = new createjs.SpriteSheet({"images": ["images/TSO_BBM_2701_BannerSet39_EC_300x250_EN_1anim_atlas_.png"], "frames": [[410,253,50,50],[0,0,336,280],[338,0,79,151],[255,826,215,83],[444,78,57,87],[0,740,336,84],[0,282,336,248],[0,925,336,35],[338,246,70,85],[462,253,45,45],[419,0,89,76],[444,167,52,84],[462,300,31,33],[0,826,253,97],[338,153,104,91],[0,532,336,206],[419,78,20,19]]});
+	exportRoot = new lib.TSO_BBM_2701_BannerSet39_EC_300x250_EN_1anim();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+
+</script>
+
+<!-- write your code here -->
+
+</head>
+<body onload="init();" style="background-color:#D4D4D4;margin:0px;">
+	<canvas id="canvas" width="300" height="250" style="background-color:#FFFFFF"></canvas>
+</body>
+</html>
