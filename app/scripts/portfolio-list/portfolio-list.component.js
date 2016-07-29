@@ -9,5 +9,15 @@ angular.
             $http.get('scripts/data.json').then(function(response) {
                 self.projects = response.data;
             });
+            self.changeClass = function(){
+                $('.marketing .nav li').click(function(e) {
+
+                $('li.active').removeClass('active');
+
+                $(this).addClass('active');
+                    e.preventDefault();
+                    
+    });
+            }
     }]
 });

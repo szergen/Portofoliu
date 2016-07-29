@@ -11,22 +11,22 @@
 <div class="container">
 <div class="row marketing">
   <ul class="nav nav-tabs">
-      <li class="active"><a href="#/">All</a></li>
-      <li><a href="#/">Web design</a></li>
-      <li><a href="#/">Animations</a></li>
-      <li><a href="#/">Newsletter design</a></li>
-      <li><a href="#/">Online Advertising</a></li>
-      <li><a href="#/">Print</a></li>
+      <li class="active"><a href="#/" ng-click="filters.cat = ''; $ctrl.changeClass(); ">All</a></li>
+      <li><a href="#/" ng-click="filters.cat = 'webdesign'; $ctrl.changeClass(); ">Web design</a></li>
+      <li><a href="#/" ng-click="filters.cat = 'animations'; $ctrl.changeClass(); ">Animations</a></li>
+      <li><a href="#/" ng-click="filters.cat = 'newsletter'; $ctrl.changeClass(); ">Newsletter design</a></li>
+      <li><a href="#/" ng-click="filters.cat = 'branding'; $ctrl.changeClass(); ">Online Advertising</a></li>
+      <li><a href="#/" ng-click="filters.cat = 'print'; $ctrl.changeClass();">Print</a></li>
   </ul>
     
-    <div class="col-lg-3 col-md-4 col-sm-6 card" ng-repeat="projects in $ctrl.projects">
+    <div class="col-lg-3 col-md-4 col-sm-6 card" ng-repeat="projects in $ctrl.projects | filter:filters">
             <div class="thumbnail">
                   <a ng-href="../images/{{projects.link}}">
                         <img ng-src="../images/thumbs/{{projects.thumb}}" alt="...">
                   </a>
                   <div class="caption">
                     
-                    <p>{{projects.name}}</p>
+                    <p class="project-name">{{projects.name}}</p>
                       <p><small>{{projects.cat}}</small></p>
                       
                     <p><a ng-href="../images/{{projects.link}}" class="btn btn-primary" role="button">Bigger, please!</a></p>

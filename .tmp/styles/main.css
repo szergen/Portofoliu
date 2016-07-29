@@ -91,7 +91,6 @@ body {
 /* Jumbotron*/
 /* line 99, ../../app/styles/main.scss */
 .jumbotron {
-  display: none;
   text-align: center;
   border-bottom: 1px solid #055b56;
   background: #0d0c0d;
@@ -162,8 +161,12 @@ body {
 .marketing .thumbnail:hover {
   box-shadow: 0px 0px 5px #a1a1a1;
 }
+/* line 162, ../../app/styles/main.scss */
+.marketing .project-name {
+  height: 30px;
+}
 
-/* line 163, ../../app/styles/main.scss */
+/* line 166, ../../app/styles/main.scss */
 small {
   color: #a1a1a1;
 }
