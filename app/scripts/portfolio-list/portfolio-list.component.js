@@ -11,24 +11,14 @@ angular.
                 self.projects = response.data;
             });
             self.changeClass = function(){
-                $('.marketing .nav li').click(function(e) {
-
                 $('li.active').removeClass('active');
-
-                $(this).addClass('active');
-                    e.preventDefault();
-                    
-    });
+                 
             }
-            self.changeClass2 = function(){
-                $('.marketing .nav li').click(function(e) {
-
-                $('li.active').removeClass('active');
-
+            self.changeClass2 = function(a){
                
-                    e.preventDefault();
-                    
-    });
+                $('.nav li').removeClass('active');
+                $('[data-cat='+a+']').addClass('active'); 
+                console.log(a);
             }
             
     }]

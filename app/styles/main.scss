@@ -165,10 +165,13 @@ body {
         height: 30px;
     }
 }
-small {
+a.small-labels {
     color:$light-gray;
 }
 small:before {
     content: '#';
 }
-a.small-labels
+a.small-labels:hover {
+    text-decoration:none;
+    color: white;
+}
