@@ -168,3 +168,6 @@ body {
 small {
     color:$light-gray;
 }
+small:before {
+    content: '#';
+}

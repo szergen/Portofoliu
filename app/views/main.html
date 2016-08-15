@@ -27,7 +27,7 @@
                   <div class="caption">
                     
                     <p class="project-name">{{projects.name}}</p>
-                      <p><small>{{projects.cat}}</small></p>
+                      <p><a class="small-labels" href="#/" ng-click="$parent.filters.cat = projects.cat; $ctrl.changeClass2();"><small>{{projects.cat}}</small></a></p>
                       
                     <p><a ng-href="../images/{{projects.link}}" class="btn btn-primary" role="button">Bigger, please!</a></p>
                   </div>

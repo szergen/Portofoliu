@@ -2,8 +2,9 @@ angular.
  module('portfolioList').
   component('portfolioList', {
     templateUrl: 'views/main.html',
-    controller: ['$http', 
-        function PortfolioListController($http){
+    controller: ['$http', '$filter', 
+        function PortfolioListController($http, $filter){
+            
             self = this;
             self.myVar = "tralala2213";
             $http.get('scripts/data.json').then(function(response) {
@@ -19,5 +20,16 @@ angular.
                     
     });
             }
+            self.changeClass2 = function(){
+                $('.marketing .nav li').click(function(e) {
+
+                $('li.active').removeClass('active');
+
+               
+                    e.preventDefault();
+                    
+    });
+            }
+            
     }]
 });
