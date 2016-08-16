@@ -9,21 +9,20 @@
  * Main module of the application.
  */
 angular
-  .module('portofoliuProtvApp', [
+  .module('portofoliu', [
     'ngAnimate',
     'ngResource',
     'ngRoute',
-    'portfolioList'
+    'portfolioList',
+    'details'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
          template: '<portfolio-list></portfolio-list>'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/details/:itemId', {
+        template: '<details></details>',
       })
       .otherwise({
         redirectTo: '/'

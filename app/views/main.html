@@ -7,7 +7,6 @@
   </p>
   <p><a class="btn btn-lg btn-success" ng-click="$ctrl.scrollTo('portfoliu-content')"><strong>LET'S SEE IT!</strong></a></p>
 </div>
-
 <div class="container" id="portfoliu-content">
 <div class="row marketing">
   <ul class="nav nav-tabs">
@@ -21,7 +20,7 @@
     
     <div class="col-lg-3 col-md-4 col-sm-6 card" ng-repeat="projects in $ctrl.projects | filter:filters">
             <div class="thumbnail">
-                  <a ng-href="../images/{{projects.link}}">
+                  <a ng-href="#/details/{{projects.id}}">
                         <img ng-src="../images/thumbs/{{projects.thumb}}" alt="...">
                   </a>
                   <div class="caption">
