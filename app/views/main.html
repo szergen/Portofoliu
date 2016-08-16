@@ -5,18 +5,18 @@
    I'm Sergiu Ciobanasu, and here is <br>
        my Portfolio
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/"><strong>LET'S SEE IT!</strong></a></p>
+  <p><a class="btn btn-lg btn-success" ng-click="$ctrl.scrollTo('portfoliu-content')"><strong>LET'S SEE IT!</strong></a></p>
 </div>
 
-<div class="container">
+<div class="container" id="portfoliu-content">
 <div class="row marketing">
   <ul class="nav nav-tabs">
       <li class="active"><a href="#/" ng-click="filters.cat = ''; $ctrl.changeClass(); ">All</a></li>
-      <li data-cat="webdesign"><a href="#/" ng-click="filters.cat = 'webdesign'; $ctrl.changeClass(); ">Web design</a></li>
-      <li data-cat="animations"><a href="#/" ng-click="filters.cat = 'animations'; $ctrl.changeClass(); ">Animations</a></li>
-      <li data-cat="newsletters"><a href="#/" ng-click="filters.cat = 'newsletter'; $ctrl.changeClass(); ">Newsletter design</a></li>
-      <li data-cat="advertising"><a href="#/" ng-click="filters.cat = 'branding'; $ctrl.changeClass(); ">Online Advertising</a></li>
-      <li data-cat="print"><a href="#/" ng-click="filters.cat = 'print'; $ctrl.changeClass();">Print</a></li>
+      <li data-cat="webdesign"><a ng-href="#/" ng-click="filters.cat = 'webdesign'; $ctrl.changeClass(); ">Web design</a></li>
+      <li data-cat="animations"><a ng-href="#/" ng-click="filters.cat = 'animations'; $ctrl.changeClass(); ">Animations</a></li>
+      <li data-cat="newsletter"><a ng-href="#/" ng-click="filters.cat = 'newsletter'; $ctrl.changeClass(); ">Newsletter design</a></li>
+      <li data-cat="advertising"><a ng-href="#/" ng-click="filters.cat = 'branding'; $ctrl.changeClass(); ">Online Advertising</a></li>
+      <li data-cat="print"><a ng-href="#/" ng-click="filters.cat = 'print'; $ctrl.changeClass();">Print</a></li>
   </ul>
     
     <div class="col-lg-3 col-md-4 col-sm-6 card" ng-repeat="projects in $ctrl.projects | filter:filters">
@@ -27,7 +27,7 @@
                   <div class="caption">
                     
                     <p class="project-name">{{projects.name}}</p>
-                      <p><a class="small-labels" href="#/" ng-click="$parent.filters.cat = projects.cat; $ctrl.changeClass2(projects.cat);"><small>{{projects.cat}}</small></a></p>
+                      <p><a class="small-labels" ng-href="#/" ng-click="$parent.filters.cat = projects.cat; $ctrl.changeClass2(projects.cat);"><small>{{projects.cat}}</small></a></p>
                       
                     <p><a ng-href="../images/{{projects.link}}" class="btn btn-primary" role="button">Bigger, please!</a></p>
                   </div>
