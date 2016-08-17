@@ -14,7 +14,7 @@ angular
     'ngResource',
     'ngRoute',
     'portfolioList',
-    'details'
+    'detailsPage'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -22,7 +22,7 @@ angular
          template: '<portfolio-list></portfolio-list>'
       })
       .when('/details/:itemId', {
-        template: '<details></details>',
+         template: '<details-page></details-page>'
       })
       .otherwise({
         redirectTo: '/'

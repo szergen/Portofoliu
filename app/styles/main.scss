@@ -176,3 +176,21 @@ a.small-labels:hover {
     text-decoration:none;
     color: white;
 }
+.close-button {
+    position: fixed;
+    z-index: 999;
+    top:100px;
+    left:76%;
+   }
+.close-button a{
+    font-family: $font-heading;
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+    
+    
+    display: block;
+}
+.close-button a:hover {
+    color:$light-gray
+}

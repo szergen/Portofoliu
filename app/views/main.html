@@ -7,7 +7,7 @@
   </p>
   <p><a class="btn btn-lg btn-success" ng-click="$ctrl.scrollTo('portfoliu-content')"><strong>LET'S SEE IT!</strong></a></p>
 </div>
-<div class="container" id="portfoliu-content">
+<div id="portfoliu-content">
 <div class="row marketing">
   <ul class="nav nav-tabs">
       <li class="active"><a href="#/" ng-click="filters.cat = ''; $ctrl.changeClass(); ">All</a></li>
@@ -28,7 +28,7 @@
                     <p class="project-name">{{projects.name}}</p>
                       <p><a class="small-labels" ng-href="#/" ng-click="$parent.filters.cat = projects.cat; $ctrl.changeClass2(projects.cat);"><small>{{projects.cat}}</small></a></p>
                       
-                    <p><a ng-href="../images/{{projects.link}}" class="btn btn-primary" role="button">Bigger, please!</a></p>
+                    <p><a ng-href="#/details/{{projects.id}}" class="btn btn-primary" role="button">Bigger, please!</a></p>
                   </div>
             </div>
     </div>    
