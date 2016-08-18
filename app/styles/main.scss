@@ -10,7 +10,7 @@
 
 body {
   padding: 0;
-    position: relative;
+    
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -93,6 +93,7 @@ body {
     font-family:$font-text;
     background-color:black;
     color:white;
+    position: relative;
 }
 
 
@@ -176,11 +177,10 @@ a.small-labels:hover {
     text-decoration:none;
     color: white;
 }
+
 .close-button {
-    position: fixed;
     z-index: 999;
-    top:100px;
-    left:76%;
+    width: 100%;
    }
 .close-button a{
     font-family: $font-heading;
@@ -188,9 +188,45 @@ a.small-labels:hover {
     font-size: 30px;
     line-height: 30px;
     
-    
-    display: block;
 }
 .close-button a:hover {
-    color:$light-gray
+    
+}
+.close-button.affix {
+    top: 0;  
+}
+.close-bar {
+    background: $light-blue;
+    padding:10px;
+}
+.close-bar span {
+    line-height: 30px;
+}
+.col-centered {
+   text-align: center; 
+}
+.col-centered .img-responsive {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+}
+.navbar-default {
+    background:$light-blue;
+    border: none;
+}
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-brand:hover {
+    color:white;
+}
+.navbar-default .navbar-brand:visited {
+    color:white;
+}
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:visited {
+    color:white;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    background:$dark-gray;
+    color:white;
 }

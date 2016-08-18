@@ -1,8 +1,34 @@
-<div class="close-button">
-    <a ng-href="#/"><span class="glyphicon glyphicon-circle-arrow-left"></span></a>
-</div>
-<div class="row">
-        <div class="col-sm-12">
-            <img ng-src="images/{{$ctrl.projects[$ctrl.projectId-1].link}}" class="img-responsive">
+
+<div class="close-button" id="myAffix">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="close-bar">
+                    <div class="row">
+                        <div class="col-xs-1">
+                            <a ng-href="#/"><span class="glyphicon glyphicon-circle-arrow-left"></span></a>
+                        </div>
+                    
+                        <div class="col-xs-10 col-centered">
+                            <span>{{$ctrl.projects[$ctrl.projectId-1].name}}</span>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            
         </div>
-</div>  
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+            <div class="col-sm-12">
+                <div class="col-centered">
+                     
+                    <!-- <img ng-src="images/{{$ctrl.projects[$ctrl.projectId-1].link}}" class="img-responsive"> -->
+                    
+                    
+                </div>
+            </div>
+    </div>  
+</div>

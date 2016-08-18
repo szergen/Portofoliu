@@ -1,21 +1,22 @@
-<div class="jumbotron">
+<div class="container">
+<div class="jumbotron" >
   <h1>Hello!</h1>
   <p class="lead">
     <img src="images/avatar.png" alt="I'm Yeoman"><br>
    I'm Sergiu Ciobanasu, and here is <br>
        my Portfolio
   </p>
-  <p><a class="btn btn-lg btn-success" ng-click="$ctrl.scrollTo('portfoliu-content')"><strong>LET'S SEE IT!</strong></a></p>
+  <p><a class="btn btn-lg btn-success" ng-click="$ctrl.scrollTo('portofoliu-content')"><strong>LET'S SEE IT!</strong></a></p>
 </div>
-<div id="portfoliu-content">
+<div id="portofoliu-content">
 <div class="row marketing">
   <ul class="nav nav-tabs">
-      <li class="active"><a href="#/" ng-click="filters.cat = ''; $ctrl.changeClass(); ">All</a></li>
-      <li data-cat="webdesign"><a ng-href="#/" ng-click="filters.cat = 'webdesign'; $ctrl.changeClass(); ">Web design</a></li>
-      <li data-cat="animations"><a ng-href="#/" ng-click="filters.cat = 'animations'; $ctrl.changeClass(); ">Animations</a></li>
-      <li data-cat="newsletter"><a ng-href="#/" ng-click="filters.cat = 'newsletter'; $ctrl.changeClass(); ">Newsletter design</a></li>
-      <li data-cat="advertising"><a ng-href="#/" ng-click="filters.cat = 'branding'; $ctrl.changeClass(); ">Online Advertising</a></li>
-      <li data-cat="print"><a ng-href="#/" ng-click="filters.cat = 'print'; $ctrl.changeClass();">Print</a></li>
+      <li class="active"><a href="#/" ng-click="filters.cat = ''; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">All</a></li>
+      <li data-cat="webdesign"><a ng-href="#/" ng-click="filters.cat = 'webdesign'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Web design</a></li>
+      <li data-cat="animations"><a ng-href="#/" ng-click="filters.cat = 'animations'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Animations</a></li>
+      <li data-cat="newsletter"><a ng-href="#/" ng-click="filters.cat = 'newsletter'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Newsletter design</a></li>
+      <li data-cat="advertising"><a ng-href="#/" ng-click="filters.cat = 'branding'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Online Advertising</a></li>
+      <li data-cat="print"><a ng-href="#/" ng-click="filters.cat = 'print'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Print</a></li>
   </ul>
     
     <div class="col-lg-3 col-md-4 col-sm-6 card" ng-repeat="projects in $ctrl.projects | filter:filters">
@@ -32,5 +33,6 @@
                   </div>
             </div>
     </div>    
+</div>
 </div>
 </div>

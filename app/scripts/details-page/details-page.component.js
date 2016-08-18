@@ -10,5 +10,16 @@ angular.
             $http.get('scripts/data.json').then(function(response) {
                 self.projects = response.data;
             });
+            
+            
+           $('#myAffix').affix({
+              offset: {
+                top: 100,
+                bottom: function () {
+                  return (this.bottom = $('.footer').outerHeight(true))
+                }
+              }
+           });
+            
     }]
 });
