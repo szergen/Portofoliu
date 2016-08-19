@@ -1,1 +1,1 @@
-angular.module('detailsPage', ['ngRoute']);
+angular.module('detailsPage', ['ngRoute','mediaType','ngSanitize']);
