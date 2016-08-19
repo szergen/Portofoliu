@@ -2,10 +2,21 @@ angular.
  module('portfolioList').
   component('portfolioList', {
     templateUrl: 'views/main.html',
-    controller: ['$http', '$location', '$anchorScroll', 
-        function PortfolioListController($http, $location, $anchorScroll){
-            
+    controller: ['$http', '$location', '$anchorScroll', '$sce', 'checkType', 
+        function PortfolioListController($http, $location, $anchorScroll, $sce, checkType){
             self = this;
+            self.currentName = '';
+            self.currentPath = '';
+            
+            self.insert = function() {
+                return $sce.trustAsHtml(checkType('', self.currentPath));
+            }
+            
+            self.test = function() {
+                console.log('test');
+            }
+            
+            
             self.myVar = "tralala2213";
             $http.get('scripts/data.json').then(function(response) {
                 self.projects = response.data;
@@ -28,5 +39,6 @@ angular.
                 $location.hash(old);
                 console.log("Merge, baaa!!!");
             }
+            
     }]
 });

@@ -1,1 +1,1 @@
-angular.module('portfolioList',[]);
+angular.module('portfolioList', ['ngRoute','mediaType','ngSanitize']);

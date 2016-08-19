@@ -9,7 +9,6 @@ angular.
            
             $http.get('scripts/data.json').then(function(response) {
                 self.projects = response.data;
-                
                 self.inserter = $sce.trustAsHtml(checkType('', self.projects[self.projectId-1].link));
                 
             });
