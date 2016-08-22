@@ -2,7 +2,7 @@ angular.
     module('mediaType').
         factory('checkType', function(){
             return function(cat, path) {
-                if(path.search('.jpg')>-1) { 
+                if(path.search('.jpg')>-1 || path.search('.png')>-1) { 
                     return  '<img src="images/'+path+'" class="img-responsive">';
                 }
                 else if(path.search('.html')>-1) {

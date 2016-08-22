@@ -13,16 +13,12 @@ angular
     'ngAnimate',
     'ngResource',
     'ngRoute',
-    'portfolioList',
-    'detailsPage'
+    'portfolioList'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
          template: '<portfolio-list></portfolio-list>'
-      })
-      .when('/details/:itemId', {
-         template: '<details-page></details-page>'
       })
       .otherwise({
         redirectTo: '/'

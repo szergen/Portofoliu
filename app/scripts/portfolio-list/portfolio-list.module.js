@@ -1,1 +1,1 @@
-angular.module('portfolioList', ['ngRoute','mediaType','ngSanitize']);
+angular.module('portfolioList', ['ngRoute','mediaType','ngSanitize', 'smoothScroll']);

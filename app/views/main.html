@@ -1,4 +1,6 @@
+<!-- The Main View -->
 <div class="container">
+<!-- Intro -->
 <div class="jumbotron" >
   <h1>Hello!</h1>
   <p class="lead">
@@ -6,22 +8,37 @@
    I'm Sergiu Ciobanasu, and here is <br>
        my Portfolio
   </p>
-  <p><a class="btn btn-lg btn-success" ng-click="$ctrl.scrollTo('portofoliu-content')"><strong>LET'S SEE IT!</strong></a></p>
-</div>
-<div id="portofoliu-content">
-<div class="row marketing">
-  <ul class="nav nav-tabs">
-      <li class="active"><a href="#/" ng-click="filters.cat = ''; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">All</a></li>
-      <li data-cat="webdesign"><a ng-href="#/" ng-click="filters.cat = 'webdesign'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Web design</a></li>
-      <li data-cat="animations"><a ng-href="#/" ng-click="filters.cat = 'animations'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Animations</a></li>
-      <li data-cat="newsletter"><a ng-href="#/" ng-click="filters.cat = 'newsletter'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Newsletter design</a></li>
-      <li data-cat="advertising"><a ng-href="#/" ng-click="filters.cat = 'branding'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Online Advertising</a></li>
-      <li data-cat="print"><a ng-href="#/" ng-click="filters.cat = 'print'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Print</a></li>
-  </ul>
+  <p><a class="btn btn-lg btn-success" scroll-to="portofoliu-content"><strong>LET'S SEE IT!</strong></a></p>
     
+    <p><a class="btn btn-lg btn-default" ng-href="Alexandru-Sergiu-Ciobanasu.pdf" download><strong>DOWNLOAD CV</strong></a></p>
+</div><!-- Intro End -->
+
+<!-- Portfolio Start -->       
+<div class="row marketing" id="portofoliu-content">
+    <!-- Navigation Start -->
+    <nav class="navbar navbar-inverse"> 
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     
+        <div class="collapse navbar-collapse" id="collapsemenu">
+          <ul class="nav nav-tabs">
+              <li class="active"><a href="#/" ng-click="filters.cat = ''; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');" >All</a></li>
+              <li data-cat="webdesign"><a ng-href="#/" ng-click="filters.cat = 'webdesign'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Web design</a></li>
+              <li data-cat="animations"><a ng-href="#/" ng-click="filters.cat = 'animations'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Animations</a></li>
+              <li data-cat="newsletter"><a ng-href="#/" ng-click="filters.cat = 'newsletter'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Newsletter design</a></li>
+              <li data-cat="advertising"><a ng-href="#/" ng-click="filters.cat = 'branding'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Online Advertising</a></li>
+              <li data-cat="print"><a ng-href="#/" ng-click="filters.cat = 'print'; $ctrl.changeClass(); $ctrl.scrollTo('portofoliu-content');">Print</a></li>
+            </ul>
+        </div>  
+    </nav> <!-- Navigation End -->
+    <!-- Projects Start -->
     <div class="col-lg-3 col-md-4 col-sm-6 card" ng-repeat="projects in $ctrl.projects | filter:filters">
-            <div class="thumbnail">
-                  <a ng-href="#/details/{{projects.id}}">
+            <div class="thumbnail webdesign">
+                  <a ng-href="#/" data-toggle="modal" data-target=".bs-example-modal-lg" ng-click="$ctrl.currentName = projects.name; $ctrl.currentPath = projects.link">
                         <img ng-src="../images/thumbs/{{projects.thumb}}" alt="...">
                   </a>
                   <div class="caption">
@@ -32,10 +49,9 @@
                     <p><a ng-href="#/" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary" role="button" ng-click="$ctrl.currentName = projects.name; $ctrl.currentPath = projects.link">Bigger, please!</a></p>
                   </div>
             </div>
-    </div>    
-</div>
-</div>
-</div>
+    </div> <!-- Projects End -->   
+</div><!-- Portfolio End --> 
+</div><!-- The Main View End -->
 
 <!-- Modal -->
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
