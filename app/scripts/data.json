@@ -28,20 +28,6 @@
     "cat": "webdesign"
   },
     {
-    "name":"Risk Website Design",
-    "id": "005",
-    "thumb": "webdesign/risk.jpg",
-    "link": "webDesign/template_master_risk.jpg",
-    "cat": "webdesign"
-  },
-    {
-    "name":"Rokaflex Website Design",
-    "id": "006",
-    "thumb": "webdesign/roka.jpg",
-    "link": "webDesign/template_master_rok.jpg",
-    "cat": "webdesign"
-  },
-    {
     "name":"Duel Of Champions Shutdown Page",
     "id": "007",
     "thumb": "webdesign/DOC.jpg",
@@ -145,5 +131,89 @@
     "thumb": "animations/tso_soccer.jpg",
     "link": "animations/TSO_Soccer/TSO_BBM_2701_BannerSet39_EC_300x250_EN_1anim.html",
     "cat": "animations"
-  }   
+  },
+    {
+    "name":"Heineken Branded Page on gsp.ro",
+    "id": "022",
+    "thumb": "Branding/heineken-branding.jpg",
+    "link": "brandingWebsites/heineken.png",
+    "cat": "advertising"
+  },
+    {
+    "name":"Orange Contest website in gsp.ro",
+    "id": "023",
+    "thumb": "Branding/orange.jpg",
+    "link": "brandingWebsites/orange.jpg",
+    "cat": "advertising"
+  },
+    {
+    "name":"Puma Contest website in gsp.ro",
+    "id": "024",
+    "thumb": "Branding/puma.jpg",
+    "link": "brandingWebsites/puma.jpg",
+    "cat": "advertising"
+  },
+    {
+    "name":"Anno Build an Empire Printed Flyer",
+    "id": "025",
+    "thumb": "prints/abe.jpg",
+    "link": "prints/template_master_prints_ABE.jpg",
+    "cat": "print"
+  },
+    {
+    "name":"Anno Online Printed Flyer",
+    "id": "026",
+    "thumb": "prints/ao.jpg",
+    "link": "prints/template_master_prints_AO.jpg",
+    "cat": "print"
+  },
+    {
+    "name":"Backend Developer job Advert",
+    "id": "027",
+    "thumb": "jobAdverts/galaxy.jpg",
+    "link": "jobAdverts/Backend_Dev_Poster.jpg",
+    "cat": "advertising"
+  },
+    {
+    "name":"iOs Developer job Advert",
+    "id": "028",
+    "thumb": "jobAdverts/galaxy2.jpg",
+    "link": "jobAdverts/IOS_dev_poster_2.jpg",
+    "cat": "advertising"
+  },
+    {
+    "name":"Marketing Artist job Advert",
+    "id": "029",
+    "thumb": "jobAdverts/mktartist.jpg",
+    "link": "jobAdverts/mkt_art_2.jpg",
+    "cat": "advertising"
+  },
+    {
+    "name":"Java job Advert",
+    "id": "030",
+    "thumb": "jobAdverts/java.jpg",
+    "link": "jobAdverts/POSTER-Java.png",
+    "cat": "advertising"
+  },
+    {
+    "name":"SEM job Advert",
+    "id": "031",
+    "thumb": "jobAdverts/sem.jpg",
+    "link": "jobAdverts/POSTER-SEM_4.jpg",
+    "cat": "advertising"
+  },
+    {
+    "name":"Re-minder Website",
+    "id": "032",
+    "thumb": "webdesign/reminder.jpg",
+    "link": "webDesign/reminder1.jpg",
+    "cat": "webdesign"
+  },
+    {
+    "name":"Euro 2016 Web App",
+    "id": "033",
+    "thumb": "webdesign/testfe.jpg",
+    "link": "webDesign/testfe.jpg",
+    "cat": "webdesign"
+  }
 ]
